@@ -1,48 +1,48 @@
 body {
-    font-family: 'Merriweather', sans-serif;
-    font-size: 15px;
-    line-height: 1;
-    background-image: url("../images/10471.png");
-  } 
-.head{
-    border-bottom: orange solid;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  background-image: url('../images/10471.png');
+}
+.head {
+  border-bottom: orange solid;
 }
 .navbar-brand {
-    font-size: 36px;
+  font-size: 36px;
 }
-.Search{
-    border-radius: 12px; 
+.Search {
+  border-radius: 12px;
 }
 .search-header {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 /*styling in city which user select */
 .city-name {
-    font-size: 30px;
+  font-size: 30px;
 }
 /*current weather condition */
 #current-conditions {
-    border-style: solid;
-    border-radius: 12px;
-    text-align: center;
-    
+  border-style: solid;
+  border-color: orange;
+  border-radius: 12px;
+  text-align: center;
 }
 .forecast-date {
-    font-size: 15px;
+  font-size: 15px;
 }
 /*footer part of  page */
 footer {
-    background-color: #343a40;
-    height: 4rem;
-    padding: 18px;
-    color: white;
-    border-top: orange solid;
-  }
-  /*is use gor git and linkhub icon */
+  background-color: #343a40;
+  height: 4rem;
+  padding: 18px;
+  color: white;
+  border-top: orange solid;
+}
+/*is use gor git and linkhub icon */
 .icon {
-    width: 30px;
-    height: 30px;
-    color: none;
-    border-right: none;
-  }
+  width: 30px;
+  height: 30px;
+  color: none;
+  border-right: none;
+}
