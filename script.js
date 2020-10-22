@@ -47,7 +47,7 @@ function weatherData(city) {
         $("#current-conditions").append(uvIndex);
       });
     //Five Day Forecast Data Conditions
-      queryUrlFiveDay = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=hourly&units=imperial&appid=" + apikey;
+      var queryUrlFiveDay = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=hourly&units=imperial&appid=" + apikey;
 
       $.ajax({
         url: queryUrlFiveDay,
@@ -92,10 +92,6 @@ $("#search-button").on("click", function (event) {
   recentSearches();
 });
 // list of city which is search by user which is stored in local storage
-$("#search-history").on("click", "tr", function (event) {
-  clearForecasts();
-  weatherData($(this).text());
-});
 
 function recentSearches() {
   $("#search-history").empty();
