@@ -2,7 +2,9 @@
 
 ## URL for the deployed app is here:
 
-# Project Description
+https://parth167.github.io/06_weather_dashboard/
+
+## Project Description
 
 ![Screenshot of weather dashboard](https://github.com/parth167/06_weather_dashboard/blob/main/assest/images/appdeploy1.jpg)
 
