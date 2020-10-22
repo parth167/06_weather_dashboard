@@ -13,7 +13,7 @@ function storeCities() {
   localStorage.setItem("citySearchStorage", JSON.stringify(citySearches));
 }
 
-  var apikey = "e29b1c89c8da9ec620dfeea74ecf210c";
+  var apikey = "7714009117e479094fd9e422bd32ba6c";
 
 function weatherData(city) {
   //api link forCurrent Forecast 
