@@ -17,7 +17,7 @@ function storeCities() {
 
 function weatherData(city) {
   //api link forCurrent Forecast 
-  var queryUrlCurrentForecast ="http://api.openweathermap.org/data/2.5/weather?q=" + city +"&units=imperial&appid=" +apikey;
+  var queryUrlCurrentForecast ="https://api.openweathermap.org/data/2.5/weather?q=" + city +"&units=imperial&appid=" +apikey;
 
   $.ajax({
     url: queryUrlCurrentForecast,
@@ -35,7 +35,7 @@ function weatherData(city) {
       $("#current-conditions").append(currentHumidity);
       $("#current-conditions").append(currentWindspeed);
     // api link for UV index 
-      var queryUrlUvIndex ="http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + long + "&appid=" + apikey;
+      var queryUrlUvIndex ="https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + long + "&appid=" + apikey;
 
       $.ajax({
       url: queryUrlUvIndex,
@@ -58,7 +58,7 @@ function weatherData(city) {
         var forecastConainter = $("#" + i);
         var forecastDate = "<h6>" + moment(responseFiveDay.daily[i].dt * 1000).format("DD MMM YYYY") + "</h6>";
        // link for the weather wedget which is used for sun and cloud images 
-        var forecastImageUrl = "http://openweathermap.org/img/wn/" + responseFiveDay.daily[i].weather[0].icon +"@2x.png";
+        var forecastImageUrl = "https://openweathermap.org/img/wn/" + responseFiveDay.daily[i].weather[0].icon +"@2x.png";
         var forecastTemp = "<h6>Temp: " + responseFiveDay.daily[i].temp.day +" °F</h6>";
         var forecastHumid = "<h6>Humidity: " + responseFiveDay.daily[i].humidity +" %</h6>";
       
